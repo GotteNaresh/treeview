@@ -1,0 +1,21 @@
+
+funtion getNumber(value)
+{
+   
+    if(value>100)
+    {
+        return false;
+    }
+    else
+    {
+        
+        console.log(value)
+         value++;
+         getNumber(value)
+    }
+}
+
+getNumber(1);
+
+git clone https://github.com/WaftTech/WaftEngine.git WaftTech/WaftEngine
+
