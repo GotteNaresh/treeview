@@ -1,27 +1,35 @@
+import { MenusData } from './MenusData';
+import {
+    Link
+  } from "react-router-dom";
+const SubMenusList = (props) => {
+    const { Name } = props.menu;
+    return(
+        <ul className="nested">
+            {MenusData.map((value, index) => {
+            const redirectPath = Name +"-"+ value.Name;
+            return(
+            <li key={index}><span className="caret"><Link to={redirectPath}>{value.Name}</Link></span>
+            
+            </li>
+            );
+            })}
+            
+        </ul>
+    )
+}
 const SideNavComponent = () => {
     return(
         <>
             <ul id="myUL">
-            <li><span className="caret">Beverages</span>
-            <ul className="nested">
-            <li>Water</li>
-            <li>Coffee</li>
-            <li><span className="caret">Tea</span>
-            <ul className="nested">
-            <li>Black Tea</li>
-            <li>White Tea</li>
-            <li><span className="caret">Green Tea</span>
-            <ul className="nested">
-            <li>Sencha</li>
-            <li>Gyokuro</li>
-            <li>Matcha</li>
-            <li>Pi Lo Chun</li>
-            </ul>
-            </li>
-            </ul>
-            </li>  
-            </ul>
-            </li>
+                {MenusData.map((value, index) => {
+                return(
+                <li key={index}><span className="caret"><Link to={value.Name}>{value.Name}</Link></span>
+                <SubMenusList menu={value}></SubMenusList>
+                </li>
+                );
+                })}
+                
             </ul>
         </>
     )
