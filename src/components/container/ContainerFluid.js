@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import Products from "../pages/Products";
 import Reports from "../pages/Reports";
 import SideNavComponent from "../sidenav/SideNavComponent";
+import ReadXML from "../pages/ReadXML";
 const ContainerFluid = () => {
     return(
         <>
@@ -22,7 +23,7 @@ const ContainerFluid = () => {
                 </Route>
                 <Route path="/Reports" element={<Reports />}>
                 </Route>
-                <Route path="/" element={<Home />}>
+                <Route path="/:id" element={<ReadXML />}>
                 </Route>
                 </Routes>
                 </div>

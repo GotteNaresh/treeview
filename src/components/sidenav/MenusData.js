@@ -1,0 +1,51 @@
+export const MenusData = [{
+	"Path": "ComplyAir/Q400/AMM/AMM07",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM07"
+}, {
+	"Path": "ComplyAir/Q400/AMM/AMM38",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM38"
+}, {
+	"Path": "ComplyAir/Q400/AMM/graphics",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "graphics"
+}, {
+	"Path": "ComplyAir/Q400/AMM/AMM53",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM53"
+}, {
+	"Path": "ComplyAir/Q400/AMM/AMM10",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM10"
+}, {
+	"Path": "ComplyAir/Q400/AMM/AMM22",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM22"
+}, {
+	"Path": "ComplyAir/Q400/AMM/AMM45",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM45"
+}, {
+	"Path": "ComplyAir/Q400/AMM/AMM56",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM56"
+}, {
+	"Path": "ComplyAir/Q400/AMM/AMM11",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM11"
+}, {
+	"Path": "ComplyAir/Q400/AMM/AMM91",
+	"HasChildren": true,
+	"Folder": "AMM",
+	"Name": "AMM91"
+}]
