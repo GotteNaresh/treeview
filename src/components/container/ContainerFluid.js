@@ -7,6 +7,7 @@ import Products from "../pages/Products";
 import Reports from "../pages/Reports";
 import SideNavComponent from "../sidenav/SideNavComponent";
 import ReadXML from "../pages/ReadXML";
+import AddFormComponents from "../xml/AddFormComponent";
 const ContainerFluid = () => {
     return(
         <>
@@ -23,7 +24,7 @@ const ContainerFluid = () => {
                 </Route>
                 <Route path="/Reports" element={<Reports />}>
                 </Route>
-                <Route path="/:id" element={<ReadXML />}>
+                <Route path="/:id" element={<AddFormComponents />}>
                 </Route>
                 </Routes>
                 </div>

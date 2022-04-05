@@ -2,6 +2,7 @@ import { MenusData } from './MenusData';
 import {
     Link
   } from "react-router-dom";
+
 const SubMenusList = (props) => {
     const { Name } = props.menu;
     return(
@@ -10,7 +11,12 @@ const SubMenusList = (props) => {
             const redirectPath = Name +"-"+ value.Name;
             return(
             <li key={index}><span className="caret"><Link to={redirectPath}>{value.Name}</Link></span>
-            
+              <ul class="nested">
+              <li>Sencha</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
+            </ul>
             </li>
             );
             })}
@@ -18,6 +24,7 @@ const SubMenusList = (props) => {
         </ul>
     )
 }
+
 const SideNavComponent = () => {
     return(
         <>
