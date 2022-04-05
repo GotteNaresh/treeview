@@ -2,7 +2,7 @@ const FooterComponent = () => {
     return(
         <>
         <footer className="container-fluid text-center">
-        <p>Footer Text</p>
+        <p></p>
         </footer>
         </>
     )

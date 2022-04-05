@@ -5,7 +5,7 @@
   }
   
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-  .row.content {height: 450px}
+  .row.content {height: 690px !important}
   
   /* Set gray background color and 100% height */
   .sidenav {
@@ -13,13 +13,14 @@
     background-color: #f1f1f1;
     height: 100%;
     text-align: start;
+    overflow: auto;
   }
   
   /* Set black background color, white text and some padding */
   footer {
-    background-color: #555;
+    background-color: #0d14a1 !important;
     color: white;
-    padding: 15px;
+    /* padding: 15px; */
   }
   
   /* On small screens, set height to 'auto' for sidenav and grid */
@@ -33,42 +34,60 @@
 
   /*** Side Nav start ***/
   ul, #myUL {
-    list-style-type: none;
+    list-style-type: none !important;
   }
   
   #myUL {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   
   .caret {
-    cursor: pointer;
-    -webkit-user-select: none; /* Safari 3.1+ */
-    -moz-user-select: none; /* Firefox 2+ */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none;
+    cursor: pointer !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    width: 100% !important;
+    height: auto !important;
+    vertical-align: middle !important;
+    border-top: 0.5px solid #dede !important;
+    border-right: 0px !important;
+    border-left: 0px !important;
   }
   
   .caret::before {
-    content: "\25B6";
-    color: black;
-    display: inline-block;
-    margin-right: 6px;
+    content: "\25B6" !important;
+    color: #0d14a1  !important;
+    display: inline-block !important;
+    margin-right: 6px !important;
   }
   
   .caret-down::before {
-    transform: rotate(90deg);  
+    transform: rotate(90deg) !important;  
   }
   
   .nested {
-    display: none;
+    display: none !important;
   }
   
   .active {
-    display: block;
+    display: block !important;
   }
   /*** side nav end ***/
   .App-logo{
     width: 40px;
     height: 40px !important;
   }
+
+  .navbar-inverse, footer {
+    background-color: #0d14a1 !important;
+    border-color: #3c763d !important;
+}
+.navbar-brand {
+  padding: 5px !important;
+}
+
+.addxmlform  input.form-control {
+  color: red;
+}
